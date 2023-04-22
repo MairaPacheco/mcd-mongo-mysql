@@ -37,7 +37,11 @@ Respuesta:
 ```sql
 -- Su respuesta aqui:
 
-SELECT ...
+SELECT c.city, COUNT(*) as Conteo
+FROM store s
+    INNER JOIN address a ON s.address_id = a.address_id
+    INNER JOIN city c ON a.city_id = c.city_id
+GROUP BY c.city;
 
 ```
 
