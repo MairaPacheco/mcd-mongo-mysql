@@ -16,7 +16,8 @@ Para guardar su progreso cada vez que termine un ejercicio, o cambie una consult
 ```bash
 git add .
 git commit -m "Enviando progreso"
-git push
+git pushFROM store
+    
 ```
 
 ## Ejercicios:
@@ -65,7 +66,10 @@ Respuesta:
 ```sql
 -- Su respuesta aqui:
 
-SELECT ...
+SELECT l.lenguage, COUNT(*) as Conteo
+FROM lenguage l
+    INNER JOIN lenguage l ON l.language_id = f.language_id
+ GROUP BY l.lenguage;
 
 ```
 
