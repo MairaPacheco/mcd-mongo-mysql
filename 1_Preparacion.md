@@ -10,7 +10,8 @@ Para instalar la base de datos Sakila en MySQL, se pueden seguir los siguientes 
     
 2.  Descargar la imagen de MySQL: Para utilizar MySQL en un contenedor Docker, es necesario descargar la imagen de MySQL. Se puede hacer ejecutando el siguiente comando en la terminal:
     
-    `docker pull mysql:8-debian`
+    `docker ps
+    `
     
     Este comando descargará la imagen de MySQL versión 8 en el sistema.
     
@@ -50,7 +51,8 @@ Para instalar la base de datos Sakila en MySQL, se pueden seguir los siguientes 
     
 8.  Importar la estructura de la base de datos Sakila: Para importar la estructura de la base de datos Sakila, se puede utilizar el siguiente comando en la terminal del contenedor:
     
-    `mysql -u root -p < sakila-db/sakila-schema.sql`
+    `mysql -u root -p < sakila-db/sakila-schema.sql
+    `
     
     Este comando importará la estructura de la base de datos Sakila.
     
